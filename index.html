@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+  <title>創用 CC RPG：八島冒險</title>
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+  <!-- 3D 海域與群島畫布 -->
+  <div id="scene-container" aria-label="創用 CC RPG 3D 小島海域"></div>
+
+  <!-- 浮動在每座島上方的名牌層 -->
+  <div id="labels-layer" aria-hidden="false"></div>
+
+  <!-- 手機版抽屜背景遮罩 -->
+  <div id="sheet-backdrop" class="sheet-backdrop" aria-hidden="true"></div>
+
+  <!-- 左側固定清單列（手機版自動改為下方滑出抽屜） -->
+  <aside id="sidebar" class="sidebar" aria-label="關卡與題目清單">
+    <!-- 手機版滑動把手列 -->
+    <button id="sheet-handle-btn" class="sheet-handle-bar" type="button" aria-label="展開或收合清單">
+      <span class="sheet-grip" aria-hidden="true"></span>
+      <span id="sheet-peek-title" class="sheet-peek-title">探索 8 座創用 CC 關卡島</span>
+      <span id="sheet-chevron" class="sheet-chevron" aria-hidden="true">▲</span>
+    </button>
+
+    <!-- 檢視一：全部小島索引 -->
+    <div id="view-index" class="sidebar-view">
+      <header class="sidebar-header">
+        <div class="brand-row">
+          <div class="brand-icon" aria-hidden="true">🧭</div>
+          <div class="brand-text">
+            <h1 class="brand-title">創用 CC RPG：八島冒險</h1>
+            <p class="brand-subtitle">每島抽 1 快速題 + 1 操作題（共 16 題）</p>
+          </div>
+        </div>
+
+        <!-- 冒險者資料列（可點擊修改班級座號） -->
+        <button id="player-pill-btn" class="player-pill-btn" type="button" title="點擊修改班級、座號與姓名">
+          <span class="player-pill-left">
+            <span>🎒</span>
+            <span id="player-pill-text">冒險者：尚未填寫班級座號</span>
+          </span>
+          <span class="player-pill-edit">修改</span>
+        </button>
+
+        <!-- 闖關進度條 -->
+        <div class="progress-card">
+          <div class="progress-stats">
+            <span id="progress-islands">通關 <strong>0 / 8</strong> 島</span>
+            <span id="progress-score" class="score-pill">0 / 32 分</span>
+          </div>
+          <div class="progress-track">
+            <div id="progress-fill" class="progress-fill" style="width: 0%"></div>
+          </div>
+        </div>
+
+        <div class="search-wrap">
+          <span class="search-icon" aria-hidden="true">🔍</span>
+          <input
+            id="search-input"
+            class="search-input"
+            type="search"
+            placeholder="搜尋關卡名稱或授權主題..."
+            autocomplete="off"
+          />
+          <button id="search-clear-btn" class="search-clear-btn hidden" type="button" aria-label="清除搜尋">✕</button>
+        </div>
+      </header>
+
+      <div id="island-list" class="scroll-area" role="list"></div>
+    </div>
+
+    <!-- 檢視二：單一小島闖關區 -->
+    <div id="view-detail" class="sidebar-view hidden">
+      <header class="detail-header">
+        <div class="detail-top-bar">
+          <button id="back-all-btn" class="back-btn" type="button">
+            <span>← 全部小島</span>
+          </button>
+          <div class="detail-badges">
+            <span id="detail-badge" class="detail-badge">第 1 關</span>
+            <span id="detail-stage-score" class="stage-score-pill">0 / 4 分</span>
+          </div>
+        </div>
+        <h2 id="detail-title" class="detail-title"></h2>
+        <p id="detail-blurb" class="detail-blurb"></p>
+
+        <!-- 本島兩題切換標籤 -->
+        <div id="question-tabs" class="question-tabs" role="tablist"></div>
+      </header>
+
+      <div id="quiz-body" class="scroll-area quiz-scroll"></div>
+
+      <footer class="detail-footer">
+        <button id="prev-island-btn" class="nav-island-btn" type="button">‹ 上一座島</button>
+        <button id="next-island-btn" class="nav-island-btn" type="button">下一座島 ›</button>
+      </footer>
+    </div>
+  </aside>
+
+  <!-- 右上浮動控制列 -->
+  <div class="hud-controls">
+    <button id="cert-hud-btn" class="hud-btn hud-btn-gold" type="button" title="查看闖關證書與八關證明">
+      <span>🏅</span>
+      <span>闖關證明</span>
+    </button>
+    <button id="summary-btn" class="hud-btn hud-btn-primary" type="button" title="查看六大概念掌握結算">
+      <span>📊</span>
+      <span>戰績結算</span>
+    </button>
+    <button id="new-round-btn" class="hud-btn" type="button" title="重新隨機抽出 16 題展開新一輪">
+      <span>🔄</span>
+      <span>重新抽題</span>
+    </button>
+    <button id="reset-view-btn" class="hud-btn" type="button" title="回到群島全覽視角">
+      <span>🧭</span>
+      <span>俯瞰全島</span>
+    </button>
+  </div>
+
+  <!-- 操作提示 -->
+  <div id="hint-pill" class="hint-pill" aria-hidden="true">
+    拖曳旋轉・滾輪縮放・點擊小島或名牌開始闖關
+  </div>
+
+  <!-- 歡迎與闖關說明彈窗（含班級座號輸入） -->
+  <div id="welcome-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="welcome-heading">
+    <div class="modal-card welcome-card">
+      <div class="welcome-hero">
+        <div class="welcome-badge">🏝️ 3D 群島互動闖關任務</div>
+        <h2 id="welcome-heading" class="welcome-title">歡迎來到「創用 CC RPG：八島冒險」</h2>
+        <p class="welcome-sub">航行 8 座低多邊形小島，收集全部通關印章並領取你的專屬闖關證書！</p>
+      </div>
+
+      <div class="modal-body welcome-body">
+        <div class="rules-grid">
+          <div class="rule-item">
+            <div class="rule-icon">🗺️</div>
+            <div>
+              <strong>8 座關卡島・共 16 題</strong>
+              <p>每座島隨機抽 1 題快速題＋1 題操作題（配對、分類、排序等），建議依 01→08 順序挑戰。</p>
+            </div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-icon">⭐</div>
+            <div>
+              <strong>計分與提示重試</strong>
+              <p>首次答對得 <strong>2 分</strong>；答錯可看教學回饋後再試一次，修正答對得 <strong>1 分</strong>（滿分 32 分）。</p>
+            </div>
+          </div>
+          <div class="rule-item">
+            <div class="rule-icon">🏅</div>
+            <div>
+              <strong>通關印章與下載證書</strong>
+              <p>完成挑戰後可查看六大核心概念分析，並下載含<strong>班級座號與八關印章</strong>的 PNG 證書交作業。</p>
+            </div>
+          </div>
+        </div>
+
+        <form id="player-form" class="player-form" novalidate>
+          <div class="form-section-title">🎒 填寫冒險者資料（會顯示於闖關證書）</div>
+          <div class="form-row-3">
+            <label class="form-field">
+              <span>班級 <em class="req">*</em></span>
+              <input id="input-class" type="text" maxlength="12" placeholder="例：801" autocomplete="off" />
+            </label>
+            <label class="form-field">
+              <span>座號 <em class="req">*</em></span>
+              <input id="input-seat" type="text" maxlength="6" placeholder="例：12" autocomplete="off" />
+            </label>
+            <label class="form-field">
+              <span>姓名／暱稱（選填）</span>
+              <input id="input-name" type="text" maxlength="16" placeholder="例：林小安" autocomplete="off" />
+            </label>
+          </div>
+          <p id="welcome-error" class="form-error hidden">請至少輸入「班級」與「座號」，方便產生專屬闖關證書喔！</p>
+          <div class="welcome-actions">
+            <button id="guest-start-btn" class="btn-secondary" type="button">先以訪客體驗</button>
+            <button id="start-game-btn" class="btn-primary" type="submit">🚀 開始八島冒險</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- 結算報告彈窗 -->
+  <div id="summary-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="summary-heading">
+    <div class="modal-card">
+      <header class="modal-header">
+        <div>
+          <h2 id="summary-heading" class="modal-title">📊 八島冒險概念結算報告</h2>
+          <p class="modal-subtitle">依首答正確（2 分）、修正後答對（1 分）統計六大核心概念</p>
+        </div>
+        <button id="close-summary-btn" class="modal-close-btn" type="button" aria-label="關閉視窗">✕</button>
+      </header>
+      <div id="summary-content" class="modal-body"></div>
+      <footer class="modal-footer">
+        <button id="open-cert-from-summary-btn" class="btn-gold" type="button">🏅 領取闖關證書／各關證明</button>
+        <button id="modal-new-round-btn" class="btn-secondary" type="button">🔄 重新抽題</button>
+        <button id="modal-continue-btn" class="btn-primary" type="button">繼續探索</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- 闖關證書與八關證明彈窗 -->
+  <div id="certificate-modal" class="modal-overlay hidden" role="dialog" aria-modal="true" aria-labelledby="cert-heading">
+    <div class="modal-card cert-modal-card">
+      <header class="modal-header">
+        <div>
+          <h2 id="cert-heading" class="modal-title">🏅 創用 CC 八島冒險・闖關證書與各關證明</h2>
+          <p class="modal-subtitle">完整記錄班級座號、八座小島通關印章與六大概念表現，可直接下載圖檔繳交</p>
+        </div>
+        <button id="close-cert-btn" class="modal-close-btn" type="button" aria-label="關閉視窗">✕</button>
+      </header>
+      <div class="modal-body cert-modal-body">
+        <div id="cert-preview-sheet" class="cert-sheet"></div>
+      </div>
+      <footer class="modal-footer">
+        <button id="download-cert-png-btn" class="btn-gold" type="button">⬇️ 下載證書圖檔 (PNG)</button>
+        <button id="print-cert-btn" class="btn-secondary" type="button">🖨️ 列印／存成 PDF</button>
+        <button id="close-cert-footer-btn" class="btn-primary" type="button">返回群島</button>
+      </footer>
+    </div>
+  </div>
+
+  <!-- 輕量提示吐司 -->
+  <div id="toast" class="toast hidden" role="status" aria-live="polite"></div>
+
+  <!-- Three.js CDN -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+  <script src="./app.js"></script>
+</body>
+</html>
