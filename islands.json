@@ -1,0 +1,1334 @@
+{
+  "meta": {
+    "title": "創用 CC RPG：八島冒險",
+    "subtitle": "8 座低多邊形小島・48 題完整題庫・每輪隨機抽 16 題",
+    "note": "本遊戲所有情境中的作品及作者均為虛構；除特別說明外，授權版本均為 4.0。題目只檢核授權條件，不處理肖像權、商標等其他權利。"
+  },
+  "concepts": [
+    {
+      "id": "icons",
+      "name": "圖示",
+      "desc": "辨識 BY、NC、ND、SA 四種授權要素"
+    },
+    {
+      "id": "combos",
+      "name": "授權組合",
+      "desc": "理解六種 CC 公眾授權的組合與限制"
+    },
+    {
+      "id": "usage",
+      "name": "用途判斷",
+      "desc": "依商業／非商業與改作需求挑選合適素材"
+    },
+    {
+      "id": "adapt",
+      "name": "改作",
+      "desc": "掌握 ND 禁止分享改作與 SA 相同方式分享"
+    },
+    {
+      "id": "source",
+      "name": "來源核對",
+      "desc": "回到原始作品頁核對作者、作品與授權連結"
+    },
+    {
+      "id": "attrib",
+      "name": "標示",
+      "desc": "完成適當姓名標示、修改說明與綜合應用"
+    }
+  ],
+  "islands": [
+    {
+      "id": "forest",
+      "stage": 1,
+      "name": "圖示森林",
+      "subtitle": "四種授權要素",
+      "concept": "icons",
+      "blurb": "踏入圖示森林，認識 BY、NC、ND、SA 四個最核心的創用 CC 授權要素。",
+      "landmark": "forest",
+      "accent": "#16a34a",
+      "palette": {
+        "grass": "#34d399",
+        "grassAlt": "#059669",
+        "sand": "#fde68a",
+        "rock": "#57534e"
+      },
+      "questions": [
+        {
+          "id": "1-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "icons",
+          "prompt": "CC 授權中的 BY 主要要求什麼？",
+          "options": [
+            "標示作者等適當資訊",
+            "禁止分享",
+            "不得商用"
+          ],
+          "answer": "標示作者等適當資訊",
+          "feedback": "BY 是姓名標示；分享時須依授權條款適當標示。"
+        },
+        {
+          "id": "1-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "icons",
+          "prompt": "作品標示 NC，哪項說法最接近它的意思？",
+          "options": [
+            "只要沒有收到錢就一定符合",
+            "使用目的不得主要為商業利益或金錢報酬",
+            "不能在網路上分享"
+          ],
+          "answer": "使用目的不得主要為商業利益或金錢報酬",
+          "feedback": "NC 看使用目的，不能只用「有沒有收錢」判斷。"
+        },
+        {
+          "id": "1-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "icons",
+          "prompt": "作品標示 ND，你想把照片明顯改畫成插畫後公開分享，應如何處理？",
+          "options": [
+            "直接分享",
+            "先取得額外許可，或改選允許改作的素材",
+            "只要寫作者就可以"
+          ],
+          "answer": "先取得額外許可，或改選允許改作的素材",
+          "feedback": "ND 不允許依該授權分享改作版本。"
+        },
+        {
+          "id": "1-4",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "配對",
+          "concept": "icons",
+          "prompt": "將圖示與意思正確配對：",
+          "pairs": [
+            {
+              "left": "BY",
+              "right": "姓名標示"
+            },
+            {
+              "left": "NC",
+              "right": "非商業性"
+            },
+            {
+              "left": "ND",
+              "right": "禁止分享改作版本"
+            },
+            {
+              "left": "SA",
+              "right": "分享改作版本時採相同或相容授權"
+            }
+          ],
+          "feedback": "SA 管的是改作版本的授權方式，不是檔案格式。"
+        },
+        {
+          "id": "1-5",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "分類",
+          "concept": "icons",
+          "prompt": "將下列敘述分入對應的 BY、NC、ND、SA：",
+          "categories": [
+            "BY",
+            "NC",
+            "ND",
+            "SA"
+          ],
+          "items": [
+            {
+              "text": "標示作者",
+              "answer": "BY"
+            },
+            {
+              "text": "商業用途限制",
+              "answer": "NC"
+            },
+            {
+              "text": "改作後公開分享的限制",
+              "answer": "ND"
+            },
+            {
+              "text": "改作後分享的授權方式",
+              "answer": "SA"
+            }
+          ],
+          "feedback": "先看每個圖示在限制哪一件事。"
+        },
+        {
+          "id": "1-6",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "連連看",
+          "concept": "icons",
+          "prompt": "將以下使用情境連至「最需要先檢查」的授權要素：",
+          "pairs": [
+            {
+              "left": "報告附上作者資訊",
+              "right": "BY"
+            },
+            {
+              "left": "品牌廣告使用圖片",
+              "right": "NC"
+            },
+            {
+              "left": "重畫圖片後發布",
+              "right": "ND"
+            },
+            {
+              "left": "改圖後選授權",
+              "right": "SA"
+            }
+          ],
+          "feedback": "真實使用常需同時檢查多個圖示；本題只找最直接相關的要素。"
+        }
+      ]
+    },
+    {
+      "id": "workshop",
+      "stage": 2,
+      "name": "授權工坊",
+      "subtitle": "六種授權組合",
+      "concept": "combos",
+      "blurb": "走進授權工坊，拆解六種標準 CC 公眾授權的名稱縮寫與附加條件。",
+      "landmark": "workshop",
+      "accent": "#ea580c",
+      "palette": {
+        "grass": "#a3e635",
+        "grassAlt": "#65a30d",
+        "sand": "#fed7aa",
+        "rock": "#78716c"
+      },
+      "questions": [
+        {
+          "id": "2-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "combos",
+          "prompt": "哪一組是六種 CC 公眾授權之一？",
+          "options": [
+            "CC BY-SA",
+            "CC NC-ND",
+            "CC SA-ND"
+          ],
+          "answer": "CC BY-SA",
+          "feedback": "六種標準公眾授權都有 BY。"
+        },
+        {
+          "id": "2-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "combos",
+          "prompt": "哪一種授權允許商業使用及分享改作版本，但分享改作版本時須採相同或相容授權？",
+          "options": [
+            "CC BY-SA",
+            "CC BY-NC-ND",
+            "CC BY-ND"
+          ],
+          "answer": "CC BY-SA",
+          "feedback": "SA 管改作版本的授權；沒有 NC 代表此授權未禁止商業使用。"
+        },
+        {
+          "id": "2-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "combos",
+          "prompt": "哪一種授權同時有非商業性和禁止分享改作版本的條件？",
+          "options": [
+            "CC BY-NC-SA",
+            "CC BY-NC-ND",
+            "CC BY-SA"
+          ],
+          "answer": "CC BY-NC-ND",
+          "feedback": "NC 與 ND 可以同時出現。"
+        },
+        {
+          "id": "2-4",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "配對",
+          "concept": "combos",
+          "prompt": "將四組授權與主要條件配對：",
+          "pairs": [
+            {
+              "left": "CC BY",
+              "right": "標示即可，允許商用與改作分享"
+            },
+            {
+              "left": "CC BY-NC",
+              "right": "限非商業用途"
+            },
+            {
+              "left": "CC BY-ND",
+              "right": "只能依授權分享未改作版本"
+            },
+            {
+              "left": "CC BY-SA",
+              "right": "分享改作版本須採相同或相容授權"
+            }
+          ],
+          "feedback": "四組都要適當姓名標示。"
+        },
+        {
+          "id": "2-5",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "配對",
+          "concept": "combos",
+          "prompt": "將授權名稱配對正確的圖示組合：",
+          "pairs": [
+            {
+              "left": "CC BY-NC-SA",
+              "right": "BY+NC+SA"
+            },
+            {
+              "left": "CC BY-NC-ND",
+              "right": "BY+NC+ND"
+            },
+            {
+              "left": "CC BY-SA",
+              "right": "BY+SA"
+            },
+            {
+              "left": "CC BY-ND",
+              "right": "BY+ND"
+            }
+          ],
+          "feedback": "讀授權名稱時，逐一拆開縮寫。"
+        },
+        {
+          "id": "2-6",
+          "group": "action",
+          "type": "order",
+          "typeLabel": "排序",
+          "concept": "combos",
+          "prompt": "依「從授權名稱中讀到的限制數量」由少至多排列：",
+          "items": [
+            "CC BY",
+            "CC BY-NC",
+            "CC BY-NC-ND"
+          ],
+          "feedback": "這是比較名稱中的附加條件，不代表所有實際情境都能只靠數量判斷。"
+        }
+      ]
+    },
+    {
+      "id": "crossroad",
+      "stage": 3,
+      "name": "用途岔路",
+      "subtitle": "用途與授權",
+      "concept": "usage",
+      "blurb": "站在用途岔路的燈塔前，判斷商業廣告、非商業班刊與原圖／改圖是否符合授權。",
+      "landmark": "lighthouse",
+      "accent": "#e11d48",
+      "palette": {
+        "grass": "#86efac",
+        "grassAlt": "#22c55e",
+        "sand": "#fef08a",
+        "rock": "#64748b"
+      },
+      "questions": [
+        {
+          "id": "3-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "usage",
+          "prompt": "商店要把一張 CC BY 4.0 圖片放進付費廣告，並完成適當標示。就 CC 授權而言，哪項正確？",
+          "options": [
+            "可依授權使用",
+            "一定不行，因為有收費",
+            "只有 NC 才能使用"
+          ],
+          "answer": "可依授權使用",
+          "feedback": "CC BY 允許商業使用，仍須遵守姓名標示等條件。"
+        },
+        {
+          "id": "3-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "usage",
+          "prompt": "公司要把 CC BY-NC 4.0 圖片用在商品廣告。哪項選擇較恰當？",
+          "options": [
+            "直接使用",
+            "另找允許商用的圖片或取得額外許可",
+            "只標示作者即可"
+          ],
+          "answer": "另找允許商用的圖片或取得額外許可",
+          "feedback": "商品廣告是明確的商業用途，不符合 NC 條件。"
+        },
+        {
+          "id": "3-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "usage",
+          "prompt": "你把 CC BY-ND 4.0 圖片原樣放在公開網頁，完成適當標示。就 ND 條件而言，哪項正確？",
+          "options": [
+            "可依授權分享未改作版本",
+            "ND 禁止任何分享",
+            "必須改圖才能分享"
+          ],
+          "answer": "可依授權分享未改作版本",
+          "feedback": "ND 允許分享未改作版本。"
+        },
+        {
+          "id": "3-4",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "分類",
+          "concept": "usage",
+          "prompt": "把四種使用放入對應分類（所有情境均完成適當標示）：",
+          "categories": [
+            "可依所述授權使用",
+            "CC BY-NC 不允許"
+          ],
+          "items": [
+            {
+              "text": "付費廣告使用 CC BY 圖",
+              "answer": "可依所述授權使用"
+            },
+            {
+              "text": "付費廣告使用 CC BY-NC 圖",
+              "answer": "CC BY-NC 不允許"
+            },
+            {
+              "text": "非商業班刊使用 CC BY 圖",
+              "answer": "可依所述授權使用"
+            },
+            {
+              "text": "非商業班刊使用 CC BY-NC 圖",
+              "answer": "可依所述授權使用"
+            }
+          ],
+          "feedback": "先看素材的授權，再看實際用途。"
+        },
+        {
+          "id": "3-5",
+          "group": "action",
+          "type": "multi-match",
+          "typeLabel": "多對多配對",
+          "concept": "usage",
+          "prompt": "為每項需求勾選可用的素材（每項需求可複選多張素材，同一素材也可重複選用；假設完成標示與 SA 條件）：",
+          "choices": [
+            {
+              "id": "1",
+              "label": "1｜CC BY-NC-ND"
+            },
+            {
+              "id": "2",
+              "label": "2｜CC BY-NC-SA"
+            },
+            {
+              "id": "3",
+              "label": "3｜CC BY"
+            }
+          ],
+          "targets": [
+            {
+              "id": "A",
+              "label": "A｜商品包裝廣告，原圖使用",
+              "answers": [
+                "3"
+              ]
+            },
+            {
+              "id": "B",
+              "label": "B｜非商業班刊，改圖後分享",
+              "answers": [
+                "2",
+                "3"
+              ]
+            },
+            {
+              "id": "C",
+              "label": "C｜商業網站，改圖後分享",
+              "answers": [
+                "3"
+              ]
+            }
+          ],
+          "feedback": "先排除與用途衝突的 NC，再檢查改圖分享是否遇到 ND。"
+        },
+        {
+          "id": "3-6",
+          "group": "action",
+          "type": "single",
+          "typeLabel": "找錯",
+          "concept": "usage",
+          "prompt": "「這張圖是 CC BY-NC；我沒有向讀者收錢，所以把它放進商品廣告一定可以。」選出錯誤部分：",
+          "options": [
+            "沒收錢就一定符合 NC",
+            "需要看圖的尺寸",
+            "商品廣告只能用黑白圖"
+          ],
+          "answer": "沒收錢就一定符合 NC",
+          "feedback": "NC 要看使用是否主要指向商業利益，商品廣告不能靠「讀者免費看」排除商業目的。"
+        }
+      ]
+    },
+    {
+      "id": "market",
+      "stage": 4,
+      "name": "素材市集",
+      "subtitle": "挑選素材",
+      "concept": "usage",
+      "blurb": "瀏覽市集裡的甲～己六張素材卡，根據不同任務需求篩選出合規作品。",
+      "landmark": "observatory",
+      "accent": "#0d9488",
+      "palette": {
+        "grass": "#2dd4bf",
+        "grassAlt": "#0d9488",
+        "sand": "#fde68a",
+        "rock": "#475569"
+      },
+      "contextCard": {
+        "title": "本關素材卡（所有題目假設已完成適當標示）",
+        "type": "materials",
+        "materials": [
+          {
+            "code": "甲",
+            "title": "《校園樹影》",
+            "license": "CC BY 4.0"
+          },
+          {
+            "code": "乙",
+            "title": "《河邊》",
+            "license": "CC BY-NC 4.0"
+          },
+          {
+            "code": "丙",
+            "title": "《小貓》",
+            "license": "CC BY-ND 4.0"
+          },
+          {
+            "code": "丁",
+            "title": "《星空》",
+            "license": "CC BY-NC-SA 4.0"
+          },
+          {
+            "code": "戊",
+            "title": "《舊街》",
+            "license": "CC BY-NC-ND 4.0"
+          },
+          {
+            "code": "己",
+            "title": "《山景》",
+            "license": "CC BY-SA 4.0"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "4-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "usage",
+          "prompt": "要把圖片改成商店宣傳海報並公開張貼，哪張最容易符合所列 CC 條件？",
+          "options": [
+            "甲《校園樹影》(CC BY 4.0)",
+            "乙《河邊》(CC BY-NC 4.0)",
+            "戊《舊街》(CC BY-NC-ND 4.0)"
+          ],
+          "answer": "甲《校園樹影》(CC BY 4.0)",
+          "feedback": "甲的 CC BY 允許商業使用及分享改作版本。"
+        },
+        {
+          "id": "4-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "usage",
+          "prompt": "非商業班刊要原樣刊登圖片，哪張在遵守姓名標示後可依授權使用？",
+          "options": [
+            "只有甲",
+            "甲、乙、丙、丁、戊、己",
+            "只有丙"
+          ],
+          "answer": "甲、乙、丙、丁、戊、己",
+          "feedback": "這裡不改作、也不作商業使用，六張都可依各自授權使用。"
+        },
+        {
+          "id": "4-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "usage",
+          "prompt": "你要改圖後公開分享，並希望新圖仍採 CC BY-SA 4.0。哪張合適？",
+          "options": [
+            "己《山景》(CC BY-SA 4.0)",
+            "丙《小貓》(CC BY-ND 4.0)",
+            "戊《舊街》(CC BY-NC-ND 4.0)"
+          ],
+          "answer": "己《山景》(CC BY-SA 4.0)",
+          "feedback": "己的 SA 要求改作版本用相同或相容授權分享。"
+        },
+        {
+          "id": "4-4",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "分類",
+          "concept": "usage",
+          "prompt": "將甲～己六張素材分成「可用於商品廣告」與「不可用於商品廣告」（假設只原樣使用並完成適當標示）：",
+          "categories": [
+            "可用於商品廣告",
+            "不可用於商品廣告"
+          ],
+          "items": [
+            {
+              "text": "甲《校園樹影》CC BY 4.0",
+              "answer": "可用於商品廣告"
+            },
+            {
+              "text": "乙《河邊》CC BY-NC 4.0",
+              "answer": "不可用於商品廣告"
+            },
+            {
+              "text": "丙《小貓》CC BY-ND 4.0",
+              "answer": "可用於商品廣告"
+            },
+            {
+              "text": "丁《星空》CC BY-NC-SA 4.0",
+              "answer": "不可用於商品廣告"
+            },
+            {
+              "text": "戊《舊街》CC BY-NC-ND 4.0",
+              "answer": "不可用於商品廣告"
+            },
+            {
+              "text": "己《山景》CC BY-SA 4.0",
+              "answer": "可用於商品廣告"
+            }
+          ],
+          "feedback": "商品廣告是商業用途；檢查有無 NC。"
+        },
+        {
+          "id": "4-5",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "分類",
+          "concept": "usage",
+          "prompt": "將甲～己分成「可分享明顯改圖版本」與「不可分享明顯改圖版本」（假設非商業分享，並遵守 SA 與姓名標示條件）：",
+          "categories": [
+            "可分享明顯改圖版本",
+            "不可分享明顯改圖版本"
+          ],
+          "items": [
+            {
+              "text": "甲《校園樹影》CC BY 4.0",
+              "answer": "可分享明顯改圖版本"
+            },
+            {
+              "text": "乙《河邊》CC BY-NC 4.0",
+              "answer": "可分享明顯改圖版本"
+            },
+            {
+              "text": "丙《小貓》CC BY-ND 4.0",
+              "answer": "不可分享明顯改圖版本"
+            },
+            {
+              "text": "丁《星空》CC BY-NC-SA 4.0",
+              "answer": "可分享明顯改圖版本"
+            },
+            {
+              "text": "戊《舊街》CC BY-NC-ND 4.0",
+              "answer": "不可分享明顯改圖版本"
+            },
+            {
+              "text": "己《山景》CC BY-SA 4.0",
+              "answer": "可分享明顯改圖版本"
+            }
+          ],
+          "feedback": "檢查有無 ND；SA 素材改作後分享還有授權條件。"
+        },
+        {
+          "id": "4-6",
+          "group": "action",
+          "type": "multi-match",
+          "typeLabel": "多對多配對",
+          "concept": "usage",
+          "prompt": "為三個需求勾選所有可用素材（每個需求可複選多張，同一素材可重複選用；假設完成所有標示與 SA 條件）：",
+          "choices": [
+            {
+              "id": "甲",
+              "label": "甲 BY"
+            },
+            {
+              "id": "乙",
+              "label": "乙 BY-NC"
+            },
+            {
+              "id": "丙",
+              "label": "丙 BY-ND"
+            },
+            {
+              "id": "丁",
+              "label": "丁 BY-NC-SA"
+            },
+            {
+              "id": "戊",
+              "label": "戊 BY-NC-ND"
+            },
+            {
+              "id": "己",
+              "label": "己 BY-SA"
+            }
+          ],
+          "targets": [
+            {
+              "id": "A",
+              "label": "A｜商業使用且改圖",
+              "answers": [
+                "甲",
+                "己"
+              ]
+            },
+            {
+              "id": "B",
+              "label": "B｜非商業使用且改圖",
+              "answers": [
+                "甲",
+                "乙",
+                "丁",
+                "己"
+              ]
+            },
+            {
+              "id": "C",
+              "label": "C｜非商業使用且原樣分享",
+              "answers": [
+                "甲",
+                "乙",
+                "丙",
+                "丁",
+                "戊",
+                "己"
+              ]
+            }
+          ],
+          "feedback": "同一張素材可能符合多種需求；逐項檢查 NC 與 ND。"
+        }
+      ]
+    },
+    {
+      "id": "gate",
+      "stage": 5,
+      "name": "改作之門",
+      "subtitle": "ND 與 SA",
+      "concept": "adapt",
+      "blurb": "穿越古堡的改作之門，釐清 ND「不得分享改作」與 SA「相同或相容授權」的關鍵界線。",
+      "landmark": "castle",
+      "accent": "#7c3aed",
+      "palette": {
+        "grass": "#6ee7b7",
+        "grassAlt": "#10b981",
+        "sand": "#e2e8f0",
+        "rock": "#6b7280"
+      },
+      "questions": [
+        {
+          "id": "5-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "adapt",
+          "prompt": "你明顯修改一張 CC BY-SA 4.0 圖片，並準備公開分享改圖。哪項符合 SA？",
+          "options": [
+            "改圖採 CC BY-SA 4.0，並適當標示原作者與修改",
+            "改圖聲明「禁止任何人再分享」",
+            "不需標示原作者"
+          ],
+          "answer": "改圖採 CC BY-SA 4.0，並適當標示原作者與修改",
+          "feedback": "分享改作版本時，須採相同或相容授權，並完成標示。"
+        },
+        {
+          "id": "5-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "adapt",
+          "prompt": "朋友給你一張 CC BY-ND 4.0 圖片。哪個行為最符合所列 CC 授權？",
+          "options": [
+            "明顯改圖後公開發布",
+            "原樣發布並適當標示",
+            "改圖後只寫「來源網路」"
+          ],
+          "answer": "原樣發布並適當標示",
+          "feedback": "ND 可分享未改作版本；改作版本不能依這項授權公開分享。"
+        },
+        {
+          "id": "5-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "adapt",
+          "prompt": "CC BY-NC-SA 4.0 圖片改作後要公開分享，哪組條件都要注意？",
+          "options": [
+            "BY、NC、SA",
+            "只看 SA",
+            "只看有沒有收費"
+          ],
+          "answer": "BY、NC、SA",
+          "feedback": "授權名稱中的條件需一起遵守。"
+        },
+        {
+          "id": "5-4",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "分類",
+          "concept": "adapt",
+          "prompt": "將下列行為分為「可依 CC BY-ND 授權分享」與「不可依該授權分享」（假設沒有其他特殊情況）：",
+          "categories": [
+            "可依 CC BY-ND 授權分享",
+            "不可依該授權分享"
+          ],
+          "items": [
+            {
+              "text": "原圖加適當標示公開",
+              "answer": "可依 CC BY-ND 授權分享"
+            },
+            {
+              "text": "重新繪製成漫畫公開",
+              "answer": "不可依該授權分享"
+            },
+            {
+              "text": "原圖加適當標示印在書中",
+              "answer": "可依 CC BY-ND 授權分享"
+            },
+            {
+              "text": "把照片合成到新圖後公開",
+              "answer": "不可依該授權分享"
+            }
+          ],
+          "feedback": "重點是公開分享的是否為改作版本。"
+        },
+        {
+          "id": "5-5",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "配對",
+          "concept": "adapt",
+          "prompt": "將三種授權與對應的改作分享規則配對：",
+          "pairs": [
+            {
+              "left": "CC BY",
+              "right": "可分享改作版本且不附 SA 條件"
+            },
+            {
+              "left": "CC BY-ND",
+              "right": "只能依授權分享未改作版本"
+            },
+            {
+              "left": "CC BY-SA",
+              "right": "分享改作版本須採相同或相容授權"
+            }
+          ],
+          "feedback": "三張都仍須適當姓名標示。"
+        },
+        {
+          "id": "5-6",
+          "group": "action",
+          "type": "single",
+          "typeLabel": "找錯",
+          "concept": "adapt",
+          "prompt": "小杰說：「我改了 CC BY-SA 圖片；只要在新圖旁寫原作者，就可以把新圖改成禁止別人分享。」哪項須修正？",
+          "options": [
+            "新圖的授權方式",
+            "原圖的顏色",
+            "圖片長寬"
+          ],
+          "answer": "新圖的授權方式",
+          "feedback": "分享改作版本時，還須遵守 SA 的相同或相容授權要求。"
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "stage": 6,
+      "name": "來源檔案室",
+      "subtitle": "核對作品頁",
+      "concept": "source",
+      "blurb": "進入來源檔案室，學習回到原始作品頁核對作者、原始連結與授權條款。",
+      "landmark": "tower",
+      "accent": "#d97706",
+      "palette": {
+        "grass": "#facc15",
+        "grassAlt": "#ca8a04",
+        "sand": "#fde68a",
+        "rock": "#78716c"
+      },
+      "contextCard": {
+        "title": "模擬作品頁（example.org 為示意網址）",
+        "type": "workpage",
+        "fields": [
+          {
+            "label": "作品名稱",
+            "value": "《雨後操場》"
+          },
+          {
+            "label": "作者",
+            "value": "林安"
+          },
+          {
+            "label": "原始頁",
+            "value": "https://example.org/works/rainy-playground"
+          },
+          {
+            "label": "授權",
+            "value": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）"
+          },
+          {
+            "label": "備註",
+            "value": "本圖已裁切"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "6-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "source",
+          "prompt": "搜尋結果寫「可免費使用」，你要確認授權，第一步應做什麼？",
+          "options": [
+            "開啟原始作品頁查看授權",
+            "直接下載",
+            "只截搜尋結果"
+          ],
+          "answer": "開啟原始作品頁查看授權",
+          "feedback": "搜尋摘要可能不完整，應回到作品頁核對。"
+        },
+        {
+          "id": "6-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "source",
+          "prompt": "在模擬頁面中，誰是應標示的作者？",
+          "options": [
+            "林安",
+            "搜尋引擎",
+            "你自己"
+          ],
+          "answer": "林安",
+          "feedback": "搜尋引擎是找素材的工具，不是作品作者。"
+        },
+        {
+          "id": "6-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "source",
+          "prompt": "哪個網址是模擬作品的原始頁？",
+          "options": [
+            "https://example.org/works/rainy-playground",
+            "https://creativecommons.org/licenses/by/4.0/",
+            "搜尋結果頁"
+          ],
+          "answer": "https://example.org/works/rainy-playground",
+          "feedback": "作品頁與授權條款頁各有不同用途。"
+        },
+        {
+          "id": "6-4",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "配對",
+          "concept": "source",
+          "prompt": "將欄位名稱與模擬作品頁中的正確資訊配對：",
+          "pairs": [
+            {
+              "left": "作品名稱",
+              "right": "《雨後操場》"
+            },
+            {
+              "left": "作者",
+              "right": "林安"
+            },
+            {
+              "left": "原始作品頁",
+              "right": "example.org/works/rainy-playground"
+            },
+            {
+              "left": "授權條款頁",
+              "right": "creativecommons.org/licenses/by/4.0/"
+            }
+          ],
+          "feedback": "標示來源時要分清作品連結與授權連結。"
+        },
+        {
+          "id": "6-5",
+          "group": "action",
+          "type": "order",
+          "typeLabel": "排序",
+          "concept": "source",
+          "prompt": "使用搜尋找到圖片後，排列較可靠的核對步驟（由第一步到最後一步）：",
+          "items": [
+            "開啟原始作品頁",
+            "確認作者及作品名稱",
+            "查看授權及條款連結",
+            "記下日後標示所需資料"
+          ],
+          "feedback": "不能只憑搜尋篩選器認定某張圖的授權。"
+        },
+        {
+          "id": "6-6",
+          "group": "action",
+          "type": "fix-fields",
+          "typeLabel": "找錯改寫",
+          "concept": "source",
+          "prompt": "小琪記錄：「作者：Google；授權：免費；來源：搜尋結果截圖。」請從模擬頁面為三欄選出正確改寫：",
+          "fields": [
+            {
+              "label": "作者（原寫：Google）",
+              "options": [
+                "林安",
+                "搜尋引擎",
+                "《雨後操場》"
+              ],
+              "answer": "林安"
+            },
+            {
+              "label": "授權（原寫：免費）",
+              "options": [
+                "CC BY 4.0",
+                "可免費下載",
+                "公眾領域"
+              ],
+              "answer": "CC BY 4.0"
+            },
+            {
+              "label": "來源（原寫：搜尋結果截圖）",
+              "options": [
+                "原始作品頁網址",
+                "瀏覽器歷史紀錄",
+                "圖片檔名"
+              ],
+              "answer": "原始作品頁網址"
+            }
+          ],
+          "feedback": "「免費」未說明授權條件，搜尋引擎也不是作者。"
+        }
+      ]
+    },
+    {
+      "id": "forge",
+      "stage": 7,
+      "name": "標示鍛造台",
+      "subtitle": "完成適當標示",
+      "concept": "attrib",
+      "blurb": "在營火鍛造台練習寫出完整、清楚的姓名標示，包含連結與修改說明。",
+      "landmark": "campfire",
+      "accent": "#dc2626",
+      "palette": {
+        "grass": "#4ade80",
+        "grassAlt": "#16a34a",
+        "sand": "#fdba74",
+        "rock": "#57534e"
+      },
+      "contextCard": {
+        "title": "沿用《雨後操場》模擬頁（學生將圖片裁切後公開放進報告網站）",
+        "type": "workpage",
+        "fields": [
+          {
+            "label": "作品名稱",
+            "value": "《雨後操場》"
+          },
+          {
+            "label": "作者",
+            "value": "林安"
+          },
+          {
+            "label": "原始頁",
+            "value": "https://example.org/works/rainy-playground"
+          },
+          {
+            "label": "授權",
+            "value": "CC BY 4.0（https://creativecommons.org/licenses/by/4.0/）"
+          },
+          {
+            "label": "本次修改",
+            "value": "學生已裁切後公開放進報告網站"
+          }
+        ]
+      },
+      "questions": [
+        {
+          "id": "7-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "attrib",
+          "prompt": "哪個標示最完整？",
+          "options": [
+            "「圖片來自網路」",
+            "「《雨後操場》／林安，原始頁：example.org/works/rainy-playground，CC BY 4.0（附授權連結）；我已裁切」",
+            "「圖片：Google」"
+          ],
+          "answer": "「《雨後操場》／林安，原始頁：example.org/works/rainy-playground，CC BY 4.0（附授權連結）；我已裁切」",
+          "feedback": "包含作品、作者、來源、授權與修改資訊。"
+        },
+        {
+          "id": "7-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "attrib",
+          "prompt": "使用 CC BY 4.0 圖片並公開分享裁切版，標示中應補充什麼？",
+          "options": [
+            "曾裁切的說明",
+            "自己的考試成績",
+            "搜尋日期即可"
+          ],
+          "answer": "曾裁切的說明",
+          "feedback": "4.0 授權要求指出是否修改。"
+        },
+        {
+          "id": "7-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "attrib",
+          "prompt": "標示「林安，CC BY 4.0」還缺少哪項重要資訊？",
+          "options": [
+            "原始作品頁與授權連結",
+            "圖片的像素數",
+            "下載時的網速"
+          ],
+          "answer": "原始作品頁與授權連結",
+          "feedback": "提供連結可讓讀者找到作品與授權條款。"
+        },
+        {
+          "id": "7-4",
+          "group": "action",
+          "type": "order",
+          "typeLabel": "排序",
+          "concept": "attrib",
+          "acceptAnyComplete": true,
+          "prompt": "將這五項資訊排成容易閱讀的標示（建議順序：作品→作者→原始頁→授權→修改；只要五項資訊完整清楚也接受其他合理順序）：",
+          "items": [
+            "《雨後操場》",
+            "林安",
+            "原始作品頁連結",
+            "CC BY 4.0 與授權連結",
+            "已裁切"
+          ],
+          "feedback": "重點是資料齊全且能對回原作。示範順序：《雨後操場》／林安／原始作品頁連結／CC BY 4.0 與授權連結／已裁切。"
+        },
+        {
+          "id": "7-5",
+          "group": "action",
+          "type": "fix-fields",
+          "typeLabel": "找錯改寫",
+          "concept": "attrib",
+          "prompt": "標示草稿：「《雨後操場》／林安，CC BY 4.0，取自 Google 圖片。已裁切。」請選出最需要替換的片段與正確替代：",
+          "fields": [
+            {
+              "label": "最需要替換的錯誤片段",
+              "options": [
+                "取自 Google 圖片",
+                "《雨後操場》／林安",
+                "已裁切"
+              ],
+              "answer": "取自 Google 圖片"
+            },
+            {
+              "label": "應替換成的正確內容",
+              "options": [
+                "原始作品頁連結，並補授權條款連結",
+                "取自網路搜尋結果",
+                "加上自己的班級座號"
+              ],
+              "answer": "原始作品頁連結，並補授權條款連結"
+            }
+          ],
+          "feedback": "搜尋頁不是原始作品頁。"
+        },
+        {
+          "id": "7-6",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "分類",
+          "concept": "attrib",
+          "prompt": "將下列資訊分為「本題標示應包含」與「本題標示無須包含」：",
+          "categories": [
+            "本題標示應包含",
+            "本題標示無須包含"
+          ],
+          "items": [
+            {
+              "text": "作者",
+              "answer": "本題標示應包含"
+            },
+            {
+              "text": "作品名稱",
+              "answer": "本題標示應包含"
+            },
+            {
+              "text": "原始頁",
+              "answer": "本題標示應包含"
+            },
+            {
+              "text": "授權連結",
+              "answer": "本題標示應包含"
+            },
+            {
+              "text": "修改說明",
+              "answer": "本題標示應包含"
+            },
+            {
+              "text": "學生座號",
+              "answer": "本題標示無須包含"
+            },
+            {
+              "text": "下載速度",
+              "answer": "本題標示無須包含"
+            }
+          ],
+          "feedback": "學生座號可能是繳交資訊，但不是原作品的授權標示。"
+        }
+      ]
+    },
+    {
+      "id": "center",
+      "stage": 8,
+      "isCenter": true,
+      "name": "發布校刊",
+      "subtitle": "總合挑戰",
+      "concept": "attrib",
+      "blurb": "登上中央最大的總合挑戰主島！整合創用 CC、CC0 與發布流程，順利發行校刊。",
+      "landmark": "library",
+      "accent": "#0284c7",
+      "palette": {
+        "grass": "#4ade80",
+        "grassAlt": "#16a34a",
+        "sand": "#fde68a",
+        "rock": "#64748b"
+      },
+      "questions": [
+        {
+          "id": "8-1",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "attrib",
+          "prompt": "校刊網站要公開一張明顯改圖版本，且不作商業使用。哪張可依所列授權使用？",
+          "options": [
+            "CC BY-NC-SA，改圖依相同或相容授權分享並完成標示",
+            "CC BY-NC-ND，改圖後只標示作者",
+            "沒有授權資訊的搜尋縮圖"
+          ],
+          "answer": "CC BY-NC-SA，改圖依相同或相容授權分享並完成標示",
+          "feedback": "逐一檢查改作、用途、分享條件及來源。"
+        },
+        {
+          "id": "8-2",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "attrib",
+          "prompt": "一張作品標示 CC0，哪項說法較準確？",
+          "options": [
+            "權利人在法律允許的最大範圍內拋棄相關權利，使用時不以 CC0 要求姓名標示",
+            "它是六種 CC 授權之一，必須標示 BY",
+            "任何人都能替別人的作品加上 CC0"
+          ],
+          "answer": "權利人在法律允許的最大範圍內拋棄相關權利，使用時不以 CC0 要求姓名標示",
+          "feedback": "CC0 是公眾領域貢獻工具，不屬於六種 CC 公眾授權。"
+        },
+        {
+          "id": "8-3",
+          "group": "quick",
+          "type": "single",
+          "typeLabel": "單選",
+          "concept": "attrib",
+          "prompt": "學生說：「圖片沒有標 CC，所以一定不能在任何情況下使用。」哪項回應較妥當？",
+          "options": [
+            "是否可用還可能涉及其他授權、法定例外或取得許可，不能只看有無 CC 標誌",
+            "沒標 CC 就可以任意使用",
+            "學校作業永遠不受著作權限制"
+          ],
+          "answer": "是否可用還可能涉及其他授權、法定例外或取得許可，不能只看有無 CC 標誌",
+          "feedback": "創用 CC 是一種事先授權方式，並非所有可能的利用依據。"
+        },
+        {
+          "id": "8-4",
+          "group": "action",
+          "type": "match",
+          "typeLabel": "配對",
+          "concept": "source",
+          "prompt": "將四個問題與查核證據配對：",
+          "pairs": [
+            {
+              "left": "誰創作？",
+              "right": "作者欄"
+            },
+            {
+              "left": "允許商用嗎？",
+              "right": "NC 有無"
+            },
+            {
+              "left": "能分享改圖嗎？",
+              "right": "ND 有無"
+            },
+            {
+              "left": "改圖分享時採何授權？",
+              "right": "SA 有無"
+            }
+          ],
+          "feedback": "最後還要保留原始頁與授權連結，以便標示及複查。"
+        },
+        {
+          "id": "8-5",
+          "group": "action",
+          "type": "order",
+          "typeLabel": "排序",
+          "concept": "attrib",
+          "prompt": "請依正確先後順序排列「校刊發布流程」：",
+          "items": [
+            "確認校刊用途",
+            "到作品頁核對授權與作者",
+            "檢查用途及改作是否符合條件",
+            "完成標示並發布"
+          ],
+          "feedback": "先確定你要怎麼用，再挑選適合的素材。"
+        },
+        {
+          "id": "8-6",
+          "group": "action",
+          "type": "classify",
+          "typeLabel": "綜合分類",
+          "concept": "usage",
+          "prompt": "需求是「將圖片明顯改成商品廣告並公開發布」。只檢查所列 CC 工具、並完成甲所需標示的前提下，將三張圖分類：",
+          "categories": [
+            "可依授權／工具使用",
+            "不可依授權使用"
+          ],
+          "items": [
+            {
+              "text": "甲｜CC BY 4.0",
+              "answer": "可依授權／工具使用"
+            },
+            {
+              "text": "乙｜CC BY-NC-ND 4.0",
+              "answer": "不可依授權使用"
+            },
+            {
+              "text": "丙｜CC0",
+              "answer": "可依授權／工具使用"
+            }
+          ],
+          "feedback": "乙同時涉及 NC 與 ND；CC0 不以 CC0 條款要求標示，但教學上仍可記錄來源。"
+        }
+      ]
+    }
+  ]
+}
